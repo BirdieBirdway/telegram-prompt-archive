@@ -3,7 +3,7 @@
     {
       "id": "001",
       "collection": "COLLECTION 2026",
-      "title": "Illustrious Anime",
+      "title": "Megumin IL - 02 Oct, 2026",
       "description": "Colección de imágenes y prompts utilizando las interfaces Forge Neo y Forge en Windows 11.",
       "image": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7a5b715b-caae-4321-920e-009f14f834ad/original=true/00047-4049468729.jpeg",
       "categories": [
@@ -11,8 +11,8 @@
         "ANIME",
         "CHARACTER ART"
       ],
-      "model": "Checkpoint: WAI-illustrious-SDXL v17.0",
-      "date": "2026",
+      "model": "Checkpoint: WAI-illustrious-NSFW-SDXL17",
+      "date": "2026-10-02",
       "author": "H.E.L.L ∣ AI ART",
       "footer": "PROMPT ARCHIVE",
       "sections": [
@@ -20,7 +20,7 @@
           "title": "PROMPT POSITIVO",
           "type": "prompt",
           "enabled": true,
-          "text": "film grain, day, masterpiece, best quality, amazing quality, looking at side, beautiful sky, wind, back view, realistic skin, clouds, blue sky, volumetric light, megumin, collar, flat chest, short summer dress white, wind, natural pose"
+          "text": "<lora:Anime in Real Life Photo Background:1> realism, film grain, day, masterpiece, best quality, amazing quality, looking at side, beautiful sky, wind, back view, realistic skin, clouds, blue sky, volumetric light\n\n<lora:konosuba-megumin-s2-illustriousxl-lora-nochekaiser:1> megumin, collar, flat chest, short summer dress white, wind, natural pose,\n<lora:zy_illustrious_Realism_Enhancer_v1:0.8> <lora:Dramatic Lighting Slider Illustrious:1>"
         },
         {
           "title": "PROMPT NEGATIVO",
@@ -33,12 +33,58 @@
           "type": "parameters",
           "enabled": true,
           "items": [
-            {"label": "Sampler", "value": "DPM++ 2M SDE"},
-            {"label": "Steps", "value": "28"},
-            {"label": "CFG", "value": "5.0"},
-            {"label": "Seed", "value": "4049468729"},
-            {"label": "Resolución", "value": "1560 × 1000 px"},
-            {"label": "Clip skip", "value": "2"}
+            {
+              "label": "Sampler",
+              "value": "DPM++ 2M SDE"
+            },
+            {
+              "label": "Schedule type",
+              "value": "Karras"
+            },
+            {
+              "label": "Steps",
+              "value": "28"
+            },
+            {
+              "label": "CFG",
+              "value": "5"
+            },
+            {
+              "label": "Seed",
+              "value": "4049468729"
+            },
+            {
+              "label": "Resolución",
+              "value": "1560 × 1000 px"
+            },
+            {
+              "label": "Denoising strength",
+              "value": "0.5"
+            },
+            {
+              "label": "Clip skip",
+              "value": "2"
+            },
+            {
+              "label": "Hires upscale",
+              "value": "2×"
+            },
+            {
+              "label": "Hires steps",
+              "value": "5"
+            },
+            {
+              "label": "Hires CFG Scale",
+              "value": "5"
+            },
+            {
+              "label": "Hires upscaler",
+              "value": "R-ESRGAN 4x+ Anime6B"
+            },
+            {
+              "label": "Hires Module 1",
+              "value": "Use same choices"
+            }
           ]
         },
         {
@@ -46,20 +92,45 @@
           "type": "resources",
           "enabled": true,
           "items": [
-            {"label": "Checkpoint", "value": "WAI-illustrious-SDXL v17.0"},
-            {"label": "VAE", "value": "sdxl_vae"},
-            {"label": "LoRA 1", "value": "Dramatic Lighting Slider [Pony, Illustrious] — 1.0"},
-            {"label": "LoRA 2", "value": "Illustrious Realism Enhancer — 1.0"},
-            {"label": "LoRA 3", "value": "konosuba-megumin-s2-illustriousxl-lora-nochekaiser — 1.0"},
-            {"label": "LoRA 4", "value": "Anime in Real Life | Photo Background | CONCEPT LORA — 1.0"},
-            {"label": "Embeddings", "value": "Ninguno"}
+            {
+              "label": "Checkpoint",
+              "value": "WAI-illustrious-NSFW-SDXL17"
+            },
+            {
+              "label": "Model hash",
+              "value": "f116b0c78f"
+            },
+            {
+              "label": "VAE",
+              "value": "sdxl_vae"
+            },
+            {
+              "label": "LoRA 1",
+              "value": "Anime in Real Life Photo Background — 1.0"
+            },
+            {
+              "label": "LoRA 2",
+              "value": "konosuba-megumin-s2-illustriousxl-lora-nochekaiser — 1.0"
+            },
+            {
+              "label": "LoRA 3",
+              "value": "zy_illustrious_Realism_Enhancer_v1 — 0.8"
+            },
+            {
+              "label": "LoRA 4",
+              "value": "Dramatic Lighting Slider Illustrious — 1.0"
+            },
+            {
+              "label": "Embeddings",
+              "value": "No indicado"
+            }
           ]
         },
         {
           "title": "NOTAS ADICIONALES",
           "type": "text",
-          "enabled": false,
-          "text": "Notas sobre ajustes, variaciones o retoques posteriores."
+          "enabled": true,
+          "text": "Extensión ADetailer\nModelo: face_yolov8n.pt\nConfidence: 0.3\nDilate / Erode: 4\nMask blur: 4\nDenoising strength: 0.4\nInpaint only masked: True\nInpaint padding: 32\nADetailer version: 26.2.0\n\nInformación técnica adicional\nForge version: f2.0.1v1.10.1-previous-669-gdfdcbab6\nDiffusion in Low Bits: Automatic (fp16 LoRA)"
         }
       ]
     },
@@ -96,13 +167,34 @@
           "type": "parameters",
           "enabled": true,
           "items": [
-            {"label": "Sampler", "value": "Euler a"},
-            {"label": "Schedule type", "value": "Normal"},
-            {"label": "Steps", "value": "30"},
-            {"label": "CFG", "value": "6"},
-            {"label": "Seed", "value": "953971519"},
-            {"label": "Resolución", "value": "1280 × 1280 px"},
-            {"label": "Clip skip", "value": "2"}
+            {
+              "label": "Sampler",
+              "value": "Euler a"
+            },
+            {
+              "label": "Schedule type",
+              "value": "Normal"
+            },
+            {
+              "label": "Steps",
+              "value": "30"
+            },
+            {
+              "label": "CFG",
+              "value": "6"
+            },
+            {
+              "label": "Seed",
+              "value": "953971519"
+            },
+            {
+              "label": "Resolución",
+              "value": "1280 × 1280 px"
+            },
+            {
+              "label": "Clip skip",
+              "value": "2"
+            }
           ]
         },
         {
@@ -110,12 +202,30 @@
           "type": "resources",
           "enabled": true,
           "items": [
-            {"label": "Checkpoint", "value": "WAI-illustrious-NSFW-SDXL17"},
-            {"label": "Model hash", "value": "f116b0c78f"},
-            {"label": "VAE", "value": "sdxl_vae"},
-            {"label": "LoRA 1", "value": "KomaroMichinokiIL- vDyzn — 1.0"},
-            {"label": "LoRA 2", "value": "Hands XL - Illustrious v1-1 — 1.0"},
-            {"label": "Embeddings", "value": "No indicado"}
+            {
+              "label": "Checkpoint",
+              "value": "WAI-illustrious-NSFW-SDXL17"
+            },
+            {
+              "label": "Model hash",
+              "value": "f116b0c78f"
+            },
+            {
+              "label": "VAE",
+              "value": "sdxl_vae"
+            },
+            {
+              "label": "LoRA 1",
+              "value": "KomaroMichinokiIL- vDyzn — 1.0"
+            },
+            {
+              "label": "LoRA 2",
+              "value": "Hands XL - Illustrious v1-1 — 1.0"
+            },
+            {
+              "label": "Embeddings",
+              "value": "No indicado"
+            }
           ]
         },
         {
@@ -159,13 +269,34 @@
           "type": "parameters",
           "enabled": true,
           "items": [
-            {"label": "Sampler", "value": "Euler a"},
-            {"label": "Schedule type", "value": "Karras"},
-            {"label": "Steps", "value": "25"},
-            {"label": "CFG", "value": "6"},
-            {"label": "Seed", "value": "981431892"},
-            {"label": "Resolución", "value": "1280 × 1280 px"},
-            {"label": "Clip skip", "value": "2"}
+            {
+              "label": "Sampler",
+              "value": "Euler a"
+            },
+            {
+              "label": "Schedule type",
+              "value": "Karras"
+            },
+            {
+              "label": "Steps",
+              "value": "25"
+            },
+            {
+              "label": "CFG",
+              "value": "6"
+            },
+            {
+              "label": "Seed",
+              "value": "981431892"
+            },
+            {
+              "label": "Resolución",
+              "value": "1280 × 1280 px"
+            },
+            {
+              "label": "Clip skip",
+              "value": "2"
+            }
           ]
         },
         {
@@ -173,12 +304,30 @@
           "type": "resources",
           "enabled": true,
           "items": [
-            {"label": "Checkpoint", "value": "WAI-illustrious-NSFW-SDXL17"},
-            {"label": "Model hash", "value": "f116b0c78f"},
-            {"label": "VAE", "value": "sdxl_vae"},
-            {"label": "LoRA 1", "value": "Nayuta_Illustrious — 1.0"},
-            {"label": "LoRA 2", "value": "Hands XL - Illustrious v1-1 — 1.0"},
-            {"label": "Embeddings", "value": "No indicado"}
+            {
+              "label": "Checkpoint",
+              "value": "WAI-illustrious-NSFW-SDXL17"
+            },
+            {
+              "label": "Model hash",
+              "value": "f116b0c78f"
+            },
+            {
+              "label": "VAE",
+              "value": "sdxl_vae"
+            },
+            {
+              "label": "LoRA 1",
+              "value": "Nayuta_Illustrious — 1.0"
+            },
+            {
+              "label": "LoRA 2",
+              "value": "Hands XL - Illustrious v1-1 — 1.0"
+            },
+            {
+              "label": "Embeddings",
+              "value": "No indicado"
+            }
           ]
         },
         {
