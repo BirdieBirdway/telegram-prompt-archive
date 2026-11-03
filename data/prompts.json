@@ -51,7 +51,7 @@
             {"label": "VAE", "value": "sdxl_vae"},
             {"label": "LoRA 1", "value": "Dramatic Lighting Slider [Pony, Illustrious] — 1.0"},
             {"label": "LoRA 2", "value": "Illustrious Realism Enhancer — 1.0"},
-            {"label": "LoRA 3", "value": "Megumin (めぐみん) - KonoSuba — 1.0"},
+            {"label": "LoRA 3", "value": "konosuba-megumin-s2-illustriousxl-lora-nochekaiser — 1.0"},
             {"label": "LoRA 4", "value": "Anime in Real Life | Photo Background | CONCEPT LORA — 1.0"},
             {"label": "Embeddings", "value": "Ninguno"}
           ]
