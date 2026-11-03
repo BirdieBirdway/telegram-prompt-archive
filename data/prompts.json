@@ -125,6 +125,69 @@
           "text": "Extensión ADetailer\nModelo: face_yolov8n.pt\nConfidence: 0.3\nDilate / Erode: 4\nMask blur: 4\nDenoising strength: 0.4\nInpaint only masked: True\nInpaint padding: 32\nVersión ADetailer: 26.2.0\n\nInformación técnica adicional\nForge version: f2.0.1v1.10.1-previous-669-gdfdcbab6\nDiffusion in Low Bits: Automatic (fp16 LoRA)"
         }
       ]
+    },
+    {
+      "id": "003",
+      "collection": "COLLECTION 2026",
+      "title": "Nayuta IL - 07 Oct, 2026",
+      "description": "Colección de imágenes y prompts utilizando las interfaces Forge Neo y Forge en Windows 11.",
+      "image": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f2a1f684-0da5-427c-9d12-a903f016fb34/original=true/00030-981431892.jpeg",
+      "categories": [
+        "ILLUSTRIOUS XL",
+        "ANIME",
+        "CHARACTER ART"
+      ],
+      "model": "Checkpoint: WAI-illustrious-NSFW-SDXL17",
+      "date": "2026-10-07",
+      "author": "H.E.L.L ∣ AI ART",
+      "footer": "PROMPT ARCHIVE",
+      "sections": [
+        {
+          "title": "PROMPT POSITIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "masterpiece, best quality, amazing quality\n\n<lora:Nayuta_Illustrious:1> nayutacsm, 1girl, young, black hair, long hair, braid, solo, yellow eyes, bangs, ringed eyes, hair over one eye, short-sleeved formal shirt white, pleated skirt, standing, v\n\n<lora:Hands XL - Illustrious v1-1:1>"
+        },
+        {
+          "title": "PROMPT NEGATIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "low quality, worst quality, bad anatomy, bad hands, error, missing fingers, extra digit, fewer digits, too many fingers, low res, 6 fingers, 6 toes, transparent, 4 fingers, 4 toes"
+        },
+        {
+          "title": "PARÁMETROS DE GENERACIÓN",
+          "type": "parameters",
+          "enabled": true,
+          "items": [
+            {"label": "Sampler", "value": "Euler a"},
+            {"label": "Schedule type", "value": "Karras"},
+            {"label": "Steps", "value": "25"},
+            {"label": "CFG", "value": "6"},
+            {"label": "Seed", "value": "981431892"},
+            {"label": "Resolución", "value": "1280 × 1280 px"},
+            {"label": "Clip skip", "value": "2"}
+          ]
+        },
+        {
+          "title": "MODELO Y RECURSOS",
+          "type": "resources",
+          "enabled": true,
+          "items": [
+            {"label": "Checkpoint", "value": "WAI-illustrious-NSFW-SDXL17"},
+            {"label": "Model hash", "value": "f116b0c78f"},
+            {"label": "VAE", "value": "sdxl_vae"},
+            {"label": "LoRA 1", "value": "Nayuta_Illustrious — 1.0"},
+            {"label": "LoRA 2", "value": "Hands XL - Illustrious v1-1 — 1.0"},
+            {"label": "Embeddings", "value": "No indicado"}
+          ]
+        },
+        {
+          "title": "NOTAS ADICIONALES",
+          "type": "text",
+          "enabled": true,
+          "text": "Extensión ADetailer\n\nADetailer 1 — Rostro\nModelo: face_yolov8n.pt\nConfidence: 0.3\nDilate / Erode: 4\nMask blur: 4\nDenoising strength: 0.4\nInpaint only masked: True\nInpaint padding: 32\n\nADetailer 2 — Manos\nModelo: hand_yolov8n.pt\nPrompt: detailed hands\nConfidence: 0.3\nDilate / Erode: 4\nMask blur: 4\nDenoising strength: 0.4\nInpaint only masked: True\nInpaint padding: 32\n\nInformación técnica adicional\nADetailer version: 26.2.0\nForge version: f2.0.1v1.10.1-previous-669-gdfdcbab6\nDiffusion in Low Bits: Automatic (fp16 LoRA)"
+        }
+      ]
     }
   ]
 }
