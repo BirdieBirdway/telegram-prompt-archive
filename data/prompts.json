@@ -1,4 +1,3 @@
-
 {
   "records": [
     {
@@ -61,6 +60,71 @@
           "type": "text",
           "enabled": false,
           "text": "Notas sobre ajustes, variaciones o retoques posteriores."
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "collection": "COLLECTION 2026",
+      "title": "Komaro IL - 25 Oct, 2026",
+      "description": "Colección de imágenes y prompts utilizando las interfaces Forge Neo y Forge en Windows 11.",
+      "image": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/37714e4e-1573-4471-99d3-b0ca13a6dcc7/original=true/00004-953971519.jpeg",
+      "categories": [
+        "ILLUSTRIOUS XL",
+        "ANIME",
+        "CHARACTER ART"
+      ],
+      "model": "Checkpoint: WAI-illustrious-NSFW-SDXL17",
+      "date": "2026-10-25",
+      "author": "H.E.L.L ∣ AI ART",
+      "footer": "PROMPT ARCHIVE",
+      "sections": [
+        {
+          "title": "PROMPT POSITIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "masterpiece, best quality, amazing quality, anime screencap, anime coloring, summer, school classroom, sky, clouds, side view, looking at the sky, sit, school desk\n\n<lora:KomaroMichinokiIL- vDyzn:1>k0m4r0, 1girl, solo, pink hair, long hair, low ponytail, ponytail, hair between eyes, blue eyes, bags under eyes, large breasts, school uniform, serafuku, sailor collar, black sailor collar, cleavage white shirt, long sleeves, black skirt, pleated skirt, skirt, pantyhose, black pantyhose,\n\n<lora:Hands XL - Illustrious v1-1:1>"
+        },
+        {
+          "title": "PROMPT NEGATIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "low quality, worst quality, bad anatomy, bad hands, error, missing fingers, extra digit, fewer digits, too many fingers, low res, 6 fingers, 6 toes, no text"
+        },
+        {
+          "title": "PARÁMETROS DE GENERACIÓN",
+          "type": "parameters",
+          "enabled": true,
+          "items": [
+            {"label": "Sampler", "value": "Euler a"},
+            {"label": "Schedule type", "value": "Normal"},
+            {"label": "Steps", "value": "30"},
+            {"label": "CFG", "value": "6"},
+            {"label": "Seed", "value": "953971519"},
+            {"label": "Resolución", "value": "1280 × 1280 px"},
+            {"label": "Clip skip", "value": "2"}
+          ]
+        },
+        {
+          "title": "MODELO Y RECURSOS",
+          "type": "resources",
+          "enabled": true,
+          "items": [
+            {"label": "Checkpoint", "value": "WAI-illustrious-NSFW-SDXL17"},
+            {"label": "Model hash", "value": "f116b0c78f"},
+            {"label": "VAE", "value": "sdxl_vae"},
+            {"label": "LoRA 1", "value": "KomaroMichinokiIL- vDyzn — 1.0"},
+            {"label": "LoRA hash 1", "value": "1da54f853700"},
+            {"label": "LoRA 2", "value": "Hands XL - Illustrious v1-1 — 1.0"},
+            {"label": "LoRA hash 2", "value": "a53740627a72"},
+            {"label": "Embeddings", "value": "No indicado"}
+          ]
+        },
+        {
+          "title": "NOTAS ADICIONALES",
+          "type": "text",
+          "enabled": true,
+          "text": "Extensión ADetailer\nModelo: face_yolov8n.pt\nConfidence: 0.3\nDilate / Erode: 4\nMask blur: 4\nDenoising strength: 0.4\nInpaint only masked: True\nInpaint padding: 32\nVersión ADetailer: 26.2.0\n\nInformación técnica adicional\nForge version: f2.0.1v1.10.1-previous-669-gdfdcbab6\nDiffusion in Low Bits: Automatic (fp16 LoRA)"
         }
       ]
     }
