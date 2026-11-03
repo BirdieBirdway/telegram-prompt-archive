@@ -114,9 +114,7 @@
             {"label": "Model hash", "value": "f116b0c78f"},
             {"label": "VAE", "value": "sdxl_vae"},
             {"label": "LoRA 1", "value": "KomaroMichinokiIL- vDyzn — 1.0"},
-            {"label": "LoRA hash 1", "value": "1da54f853700"},
             {"label": "LoRA 2", "value": "Hands XL - Illustrious v1-1 — 1.0"},
-            {"label": "LoRA hash 2", "value": "a53740627a72"},
             {"label": "Embeddings", "value": "No indicado"}
           ]
         },
