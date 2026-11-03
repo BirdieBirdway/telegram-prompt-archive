@@ -1,22 +1,67 @@
+
 {
   "records": [
     {
       "id": "001",
-      "collection": "COLLECTION 001",
-      "title": "Celestial Guardian",
-      "description": "Descripción breve de la ilustración. Sustituye este texto por una explicación de la composición, el personaje, la iluminación o el estilo.",
-      "image": "./assets/placeholder.svg",
-      "categories": ["ILLUSTRIOUS XL", "FANTASY", "CHARACTER ART"],
-      "model": "Checkpoint: nombre del modelo",
+      "collection": "COLLECTION 2026",
+      "title": "Illustrious Anime",
+      "description": "Colección de imágenes y prompts utilizando las interfaces Forge Neo y Forge en Windows 11.",
+      "image": "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/7a5b715b-caae-4321-920e-009f14f834ad/original=true/00047-4049468729.jpeg",
+      "categories": [
+        "ILLUSTRIOUS XL",
+        "ANIME",
+        "CHARACTER ART"
+      ],
+      "model": "Checkpoint: WAI-illustrious-SDXL v17.0",
       "date": "2026",
-      "author": "YOUR CHANNEL",
+      "author": "H.E.L.L ∣ AI ART",
       "footer": "PROMPT ARCHIVE",
       "sections": [
-        {"title":"PROMPT POSITIVO","type":"prompt","enabled":true,"text":"masterpiece, best quality, 1girl, detailed character design, cinematic lighting, intricate outfit, dynamic composition"},
-        {"title":"PROMPT NEGATIVO","type":"prompt","enabled":true,"text":"low quality, worst quality, blurry, bad anatomy, malformed hands, extra fingers"},
-        {"title":"PARÁMETROS DE GENERACIÓN","type":"parameters","enabled":true,"items":[{"label":"Sampler","value":"DPM++ 2M"},{"label":"Steps","value":"30"},{"label":"CFG","value":"5.0"},{"label":"Seed","value":"123456789"},{"label":"Resolución","value":"1024 × 1536"},{"label":"Clip skip","value":"—"}]},
-        {"title":"MODELO Y RECURSOS","type":"resources","enabled":true,"items":[{"label":"Checkpoint","value":"Nombre y versión del modelo"},{"label":"VAE","value":"Nombre del VAE o automático"},{"label":"LoRA","value":"Nombre, peso y trigger words"},{"label":"Embeddings","value":"Ninguno"}]},
-        {"title":"NOTAS ADICIONALES","type":"text","enabled":false,"text":"Notas sobre ajustes, variaciones o retoques posteriores."}
+        {
+          "title": "PROMPT POSITIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "film grain, day, masterpiece, best quality, amazing quality, looking at side, beautiful sky, wind, back view, realistic skin, clouds, blue sky, volumetric light, megumin, collar, flat chest, short summer dress white, wind, natural pose"
+        },
+        {
+          "title": "PROMPT NEGATIVO",
+          "type": "prompt",
+          "enabled": true,
+          "text": "low quality, worst quality, bad anatomy, bad hands, error, missing fingers, extra digit, fewer digits, too many fingers, low res, 6 fingers, 6 toes, 3d, anime, 2d"
+        },
+        {
+          "title": "PARÁMETROS DE GENERACIÓN",
+          "type": "parameters",
+          "enabled": true,
+          "items": [
+            {"label": "Sampler", "value": "DPM++ 2M SDE"},
+            {"label": "Steps", "value": "28"},
+            {"label": "CFG", "value": "5.0"},
+            {"label": "Seed", "value": "4049468729"},
+            {"label": "Resolución", "value": "1560 × 1000 px"},
+            {"label": "Clip skip", "value": "2"}
+          ]
+        },
+        {
+          "title": "MODELO Y RECURSOS",
+          "type": "resources",
+          "enabled": true,
+          "items": [
+            {"label": "Checkpoint", "value": "WAI-illustrious-SDXL v17.0"},
+            {"label": "VAE", "value": "sdxl_vae"},
+            {"label": "LoRA 1", "value": "Dramatic Lighting Slider [Pony, Illustrious] — 1.0"},
+            {"label": "LoRA 2", "value": "Illustrious Realism Enhancer — 1.0"},
+            {"label": "LoRA 3", "value": "Megumin (めぐみん) - KonoSuba — 1.0"},
+            {"label": "LoRA 4", "value": "Anime in Real Life | Photo Background | CONCEPT LORA — 1.0"},
+            {"label": "Embeddings", "value": "Ninguno"}
+          ]
+        },
+        {
+          "title": "NOTAS ADICIONALES",
+          "type": "text",
+          "enabled": false,
+          "text": "Notas sobre ajustes, variaciones o retoques posteriores."
+        }
       ]
     }
   ]
